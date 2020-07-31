@@ -37,7 +37,7 @@ class Stopwatch extends Component {
     };
     render() {
 
-    /*Rendering the display and calculating */
+    /*Rendering the display and calculating methods */
 
     const { timerTime } = this.state;
         

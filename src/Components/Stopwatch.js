@@ -21,7 +21,7 @@ class Stopwatch extends Component {
             this.setState({
                 timerTime: Date.now() - this.state.timerStart
             });
-        }, 10);
+        });
     };
     /* Setting the Stopwatch timer to stop */
     stopTimer = () => {
@@ -39,11 +39,11 @@ class Stopwatch extends Component {
 
     /*Rendering the display and calculating */
 
-        const { timerTime } = this.state;
+    const { timerTime } = this.state;
         
-        let seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
-        let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
-        let hours = ("0" + Math.floor(timerTime / 3600000)).slice(-2);
+     let seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);
+     let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
+     let hours = ("0" + Math.floor(timerTime / 3600000)).slice(-2);
 
 
         return (

@@ -48,6 +48,7 @@ class Stopwatch extends Component {
 
         return (
             <div className="Stopwatch">
+                <br></br>
                 <div className="display">
                     
                 {hours} - {minutes} - {seconds}

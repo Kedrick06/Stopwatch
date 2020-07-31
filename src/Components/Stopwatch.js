@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 
+
+
 class Stopwatch extends Component {
-  
+    /* Setting the state*/
     state = {
         timerOn: false,
         timerStart: 0,
         timerTime: 0
     };
-   
+    /* Setting the Stopwatch timer */
     startTimer = () => {
         this.setState({
             timerOn: true,
@@ -32,7 +34,9 @@ class Stopwatch extends Component {
         });
     };
     render() {
-        
+        /**
+         * Formatting and Display
+         */
         const { timerTime } = this.state;
         let centiseconds = ("0" + (Math.floor(timerTime / 10) % 100)).slice(-2);
         let seconds = ("0" + (Math.floor(timerTime / 1000) % 60)).slice(-2);

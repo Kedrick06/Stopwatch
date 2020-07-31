@@ -50,7 +50,7 @@ class Stopwatch extends Component {
             <div className="Stopwatch">
                 <div className="display">
                     
-                {hours} : {minutes} : {seconds}
+                {hours} - {minutes} - {seconds}
                 <br></br>
                     {this.state.timerOn === false && this.state.timerTime === 0 && (
                         <button className="button" onClick={this.beginTimer}>Start</button>

@@ -12,6 +12,9 @@
 .button{
   height:60px;
   width: 115px;
+  border-radius: 2vh;
+  font-family:fantasy;
+  font-size: 3vh;
 
 }
 
